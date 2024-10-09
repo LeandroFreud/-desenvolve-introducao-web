@@ -1,0 +1,109 @@
+/* Estilo geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #979492;
+}
+
+/* Cores */
+:root {
+  --cor-principal: #2C3E50;
+  --cor-secundaria: #ECF0F1;
+  --cor-destaque: #860a0a;
+}
+
+/* Navegação */
+nav {
+  background-color: var(--cor-principal);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+}
+
+/* Seções */
+section {
+  padding: 60px 20px;
+  margin-top: 60px;
+}
+
+/* Apresentação */
+#apresentacao h1 {
+  font-family: 'Georgia', serif;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+#apresentacao img {
+    width: 100%;
+    height: auto;
+    max-width: 150px; /* Define um tamanho máximo para a imagem */
+    border-radius: 50%;
+    margin: 10px 0;
+  }
+
+
+
+  /* Para corrigir o espaçamento na versão mobile */
+@media (max-width: 768px) {
+    #apresentacao {
+      padding-top: 200px; /* Adiciona espaço suficiente para que a imagem não seja coberta */
+    }
+  }
+  
+  
+  /* Educação e Experiência */
+.educacao-item, .exp-item, .cert-item {
+  margin-bottom: 20px;
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--cor-destaque);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Layout responsivo */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  section {
+    padding: 40px 10px;
+  }
+
+  #apresentacao {
+    text-align: center;
+  }
+}
